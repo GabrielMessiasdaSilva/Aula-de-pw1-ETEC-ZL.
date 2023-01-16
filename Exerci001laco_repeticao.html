@@ -1,0 +1,45 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882">
+    <head>
+<meta charset="UTF-8">
+<script text/javascript>
+   function calcular(tabuada)
+  {
+	
+     tab=parseInt(tabuada.value);
+	 
+	 for(c=1; c<=10;c++)
+	 {
+          document.write(tab+" x "+c+" = "+c*tab+"<br>");
+      }
+     
+  }
+    
+    
+</script>
+    
+
+        
+    
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor msdt:dt="string">GABRIEL MESSIAS DA SILVA</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Editor>
+<mso:Order msdt:dt="string">4600.00000000000</mso:Order>
+<mso:ComplianceAssetId msdt:dt="string"></mso:ComplianceAssetId>
+<mso:_ExtendedDescription msdt:dt="string"></mso:_ExtendedDescription>
+<mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author msdt:dt="string">GABRIEL MESSIAS DA SILVA</mso:display_urn_x003a_schemas-microsoft-com_x003a_office_x003a_office_x0023_Author>
+<mso:TriggerFlowInfo msdt:dt="string"></mso:TriggerFlowInfo>
+<mso:ContentTypeId msdt:dt="string">0x0101003EA086D011CDA9419646167493B416AD</mso:ContentTypeId>
+<mso:_SourceUrl msdt:dt="string"></mso:_SourceUrl>
+<mso:_SharedFileIndex msdt:dt="string"></mso:_SharedFileIndex>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+<title></title></head>
+<body>
+<center>Calculo da Tabuada</center>
+<br><br>
+<form name="Tabuar">
+    Digite um numero<input type="text" name="tabuada">
+<input type="submit"  value="Digite um numero da tabuada" onclick='calcular(tabuada)'>
+</form>
+</body>
+</html>
