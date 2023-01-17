@@ -1,0 +1,37 @@
+
+<html>
+<head>
+  <title>Cálculo de salário</title>
+ <meta charset="UTF-8" />
+<!--Javascript-->     
+<script language="Javascript">            
+function calcular(ht,vh,nd){
+        
+       bn=300;
+
+	   sb=parseFloat(vh.value)*parseFloat(ht.value);
+	   sl=sb+(bn*parseInt(nd.value));
+	alert("seu salario bruto é="+sb);
+	alert("seu salario liquido é="+sl);
+}
+       
+
+</script>
+</head>
+<body>
+<br>
+<center><h1>Calculo do salario</center></h1>
+<br><br><br>
+
+<!--formulario-->
+<form name="salario">
+Digite o valor da hora: <input type="text" name="vh">
+<br><br>
+Digite a quantidades de horas trabalhadas no mês: <input type="text" name="ht">
+<br><br>
+Digite o numero de dependentes: <input type="text" name="nd">
+<input type= "submit" value="calcular" onclick='calcular(ht,vh,nd)'>
+</form>
+</body>
+
+</html>
