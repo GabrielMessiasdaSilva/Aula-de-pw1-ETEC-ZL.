@@ -1,0 +1,32 @@
+<html>
+<head>
+
+<script language="Javascript">
+function calcular(cod,sla){
+     var per,rea,sl,sln;
+       percent=parseInt(cod.value)*5;
+       sl=parseInt(sla.value);
+	   
+	   if(percent>30){
+	   alert("o codigo digitado não foi aceito,digite de 1 a 6");
+	   }else{
+	   reajus=(sl/100)*percent;
+	   sln=sl+reajus;
+	   alert("O seu salario antigo era"+sl+" e seu Salario atual será de "+sln+" E o reajuste aplicado foi de "+reajus);
+	   
+	   }
+	   }
+	   
+</script>
+</head>
+<body>
+<!--formulario-->
+<form name="Salario">
+Digite o codigo<input type="text" name="cod">
+<br><br><br>
+Digite o seu salario atual<input type="text" name="sla">
+
+<input type="submit" value="Digite o número para saber o departamento que você será inserido"  onclick='calcular(cod,sla)'>
+</form>
+</body>
+</html>
