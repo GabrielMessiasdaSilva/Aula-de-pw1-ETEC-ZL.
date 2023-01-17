@@ -1,0 +1,44 @@
+<html>
+<head>
+
+<script language="Javascript">
+function calcular(codigo) {
+var cod;
+cod=parseInt(codigo.value);
+
+ if (cod==1){
+ alert("o departamento que você deverá trablhar é:Expedição");
+ }else{
+  if (cod==2){
+ alert("o departamento que você deverá trablhar é:RH");
+ }else{
+ if (cod==3){
+ alert("o departamento que você deverá trablhar é:Logistica");
+ }else{
+ if (cod==4){
+ alert("o departamento que você deverá trablhar é:Contabilildade");
+ }else{
+ if (cod==5){
+ alert("o departamento que você deverá trablhar é:Departamento Pessoal");
+ }else{
+    if (cod==6){
+ alert("o departamento que você deverá trablhar é:Informática");
+                   }
+	           }
+	         }
+	      }
+	    }
+     }
+}
+</script>
+</head>
+<body>
+<!--formulario-->
+<form name="trabalho">
+Digite o codigo do Departamento<input type="text" name="codigo">
+
+
+<input type="submit" value="codigo dos departamento"  onclick='calcular(codigo)'>
+</form>
+</body>
+</html>
